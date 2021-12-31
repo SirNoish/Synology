@@ -11,7 +11,7 @@ rm -rf /opt
 ln -sf /volume1/@entware-ng/opt /opt &> /dev/null
 
 echo -e "Downloading 'entware_install.sh' from entware.net..."
-wget -qO - http://pkg.entware.net/binaries/armv7/installer/entware_install.sh | /bin/sh &> /dev/null
+wget -qO - http://pkg.entware.net/binaries/x86-64/installer/entware_install.sh | /bin/sh &> /dev/null
 /bin/ln -sf /volume1/@entware-ng/opt /opt &> /dev/null
 /opt/etc/init.d/rc.unslung start &> /dev/null
 echo -e "Done...."
